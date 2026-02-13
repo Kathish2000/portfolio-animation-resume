@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Kathish | Full Stack Developer{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="min-h-screen flex items-center justify-center relative px-4">
+    <!-- Floating gradient shapes -->
+    <div class="absolute top-20 left-10 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 2s;"></div>
+    <div class="absolute top-1/2 left-1/2 w-64 h-64 bg-cyan-500/5 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 4s;"></div>
+
+    <div class="max-w-7xl mx-auto w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Text Content -->
+            <div class="order-2 lg:order-1 text-center lg:text-left">
+                <div class="animate-fade-in">
+                    <div class="inline-flex items-center px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6">
+                        <span class="w-2 h-2 rounded-full bg-green-400 mr-2 animate-pulse"></span>
+                        <span class="text-sm text-purple-300">Available for opportunities</span>
+                    </div>
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold font-space leading-tight animate-slide-up">
+                    Hi, I'm
+                    <span class="gradient-text">Kathish</span>
+                </h1>
+
+                <div class="mt-4 text-xl sm:text-2xl lg:text-3xl text-gray-300 font-light animate-slide-up" style="animation-delay: 0.2s;">
+                    <span class="typing-text typing-cursor" data-texts='["Full Stack Developer", "UI/UX Designer", "Problem Solver", "Tech Enthusiast"]'></span>
+                </div>
+
+                <p class="mt-6 text-gray-400 text-lg max-w-lg mx-auto lg:mx-0 leading-relaxed animate-slide-up" style="animation-delay: 0.4s;">
+                    Passionate about crafting beautiful, performant web applications
+                    that make a difference. Let's build something amazing together.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start animate-slide-up" style="animation-delay: 0.6s;">
+                    <a href="{% url 'portfolio:projects' %}" class="group px-8 py-3.5 bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl font-semibold text-sm hover:shadow-xl hover:shadow-purple-500/25 transition-all duration-300 hover:-translate-y-1 flex items-center gap-2">
+                        View Projects
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                    </a>
+                    <a href="{% static 'resume/Kathish_Resume.pdf' %}" download class="px-8 py-3.5 bg-white/5 border border-white/10 rounded-xl font-semibold text-sm hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:-translate-y-1 flex items-center gap-2">
+                        📄 Download Resume
+                    </a>
+                </div>
+
+                <!-- Stats -->
+                <div class="mt-12 flex gap-8 justify-center lg:justify-start animate-slide-up" style="animation-delay: 0.8s;">
+                    <div>
+                        <div class="text-3xl font-bold font-space gradient-text">
+                            <span class="counter" data-target="15" data-suffix="+">0</span>
+                        </div>
+                        <div class="text-sm text-gray-500 mt-1">Projects</div>
+                    </div>
+                    <div class="w-px bg-white/10"></div>
+                    <div>
+                        <div class="text-3xl font-bold font-space gradient-text">
+                            <span class="counter" data-target="3" data-suffix="+">0</span>
+                        </div>
+                        <div class="text-sm text-gray-500 mt-1">Years Exp.</div>
+                    </div>
+                    <div class="w-px bg-white/10"></div>
+                    <div>
+                        <div class="text-3xl font-bold font-space gradient-text">
+                            <span class="counter" data-target="10" data-suffix="+">0</span>
+                        </div>
+                        <div class="text-sm text-gray-500 mt-1">Technologies</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Photo -->
+            <div class="order-1 lg:order-2 flex justify-center animate-fade-in">
+                <div class="relative">
+                    <!-- Orbiting rings -->
+                    <div class="absolute inset-0 w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 border border-purple-500/10 rounded-full animate-spin-slow" style="margin: -2rem;"></div>
+                    <div class="absolute inset-0 w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 border border-blue-500/10 rounded-full animate-spin-slow" style="margin: -3rem; animation-direction: reverse; animation-duration: 12s;"></div>
+
+                    <!-- Profile image -->
+                    <div class="profile-glow w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden animate-float">
+                        <img src="{% static 'images/profile.jpg' %}" alt="Kathish - Developer" class="w-full h-full object-cover" onerror="this.src='https://ui-avatars.com/api/?name=K&size=320&background=a855f7&color=fff&bold=true&font-size=0.4';">
+                    </div>
+
+                    <!-- Floating tech badges -->
+                    <div class="absolute -top-4 -right-4 px-3 py-1.5 bg-dark-700/80 backdrop-blur-xl rounded-lg border border-white/10 text-xs font-medium animate-float" style="animation-delay: 1s;">
+                        ⚛️ React
+                    </div>
+                    <div class="absolute -bottom-2 -left-4 px-3 py-1.5 bg-dark-700/80 backdrop-blur-xl rounded-lg border border-white/10 text-xs font-medium animate-float" style="animation-delay: 2s;">
+                        🐍 Python
+                    </div>
+                    <div class="absolute top-1/2 -right-8 px-3 py-1.5 bg-dark-700/80 backdrop-blur-xl rounded-lg border border-white/10 text-xs font-medium animate-float" style="animation-delay: 3s;">
+                        🎨 Django
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div class="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center">
+            <div class="w-1.5 h-3 bg-purple-400 rounded-full mt-2 animate-pulse"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Tech Stack Preview -->
+<section class="py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+        <div class="scroll-reveal text-center mb-12">
+            <h2 class="text-3xl font-bold font-space gradient-text">Tech Stack</h2>
+            <p class="text-gray-400 mt-2">Technologies I work with daily</p>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            {% for tech in "Python,Django,JavaScript,React,Tailwind CSS,PostgreSQL,Node.js,Git,Docker,HTML/CSS,TypeScript,REST API"|make_list %}
+            {% endfor %}
+            <div class="glass-card p-4 text-center scroll-reveal-scale" data-delay="0">
+                <div class="text-2xl mb-2">🐍</div>
+                <div class="text-xs text-gray-300 font-medium">Python</div>
+            </div>
+            <div class="glass-card p-4 text-center scroll-reveal-scale" data-delay="100">
+                <div class="text-2xl mb-2">🎯</div>
+                <div class="text-xs text-gray-300 font-medium">Django</div>
+            </div>
+            <div class="glass-card p-4 text-center scroll-reveal-scale" data-delay="200">
+                <div class="text-2xl mb-2">⚡</div>
+                <div class="text-xs text-gray-300 font-medium">JavaScript</div>
+            </div>
+            <div class="glass-card p-4 text-center scroll-reveal-scale" data-delay="300">
+                <div class="text-2xl mb-2">⚛️</div>
+                <div class="text-xs text-gray-300 font-medium">React</div>
+            </div>
+            <div class="glass-card p-4 text-center scroll-reveal-scale" data-delay="400">
+                <div class="text-2xl mb-2">🎨</div>
+                <div class="text-xs text-gray-300 font-medium">Tailwind</div>
+            </div>
+            <div class="glass-card p-4 text-center scroll-reveal-scale" data-delay="500">
+                <div class="text-2xl mb-2">🐘</div>
+                <div class="text-xs text-gray-300 font-medium">PostgreSQL</div>
+            </div>
+            <div class="glass-card p-4 text-center scroll-reveal-scale" data-delay="600">
+                <div class="text-2xl mb-2">🟢</div>
+                <div class="text-xs text-gray-300 font-medium">Node.js</div>
+            </div>
+            <div class="glass-card p-4 text-center scroll-reveal-scale" data-delay="700">
+                <div class="text-2xl mb-2">🔀</div>
+                <div class="text-xs text-gray-300 font-medium">Git</div>
+            </div>
+            <div class="glass-card p-4 text-center scroll-reveal-scale" data-delay="800">
+                <div class="text-2xl mb-2">🐳</div>
+                <div class="text-xs text-gray-300 font-medium">Docker</div>
+            </div>
+            <div class="glass-card p-4 text-center scroll-reveal-scale" data-delay="900">
+                <div class="text-2xl mb-2">🌐</div>
+                <div class="text-xs text-gray-300 font-medium">HTML/CSS</div>
+            </div>
+            <div class="glass-card p-4 text-center scroll-reveal-scale" data-delay="1000">
+                <div class="text-2xl mb-2">📘</div>
+                <div class="text-xs text-gray-300 font-medium">TypeScript</div>
+            </div>
+            <div class="glass-card p-4 text-center scroll-reveal-scale" data-delay="1100">
+                <div class="text-2xl mb-2">🔗</div>
+                <div class="text-xs text-gray-300 font-medium">REST APIs</div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

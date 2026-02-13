@@ -1,0 +1,207 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Experience | Kathish{% endblock %}
+
+{% block content %}
+<!-- Experience Hero -->
+<section class="pt-32 pb-16 px-4">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 mb-4 scroll-reveal">
+                <span class="text-sm text-blue-300">💼 Professional Journey</span>
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-space scroll-reveal" data-delay="100">
+                Work <span class="gradient-text">Experience</span>
+            </h1>
+            <p class="text-gray-400 mt-4 max-w-2xl mx-auto scroll-reveal" data-delay="200">
+                My professional journey and the amazing teams I've had the opportunity to work with.
+            </p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="max-w-4xl mx-auto">
+            <div class="relative pl-12">
+                <!-- Timeline line -->
+                <div class="timeline-line"></div>
+
+                <!-- Experience 1 -->
+                <div class="relative mb-12 scroll-reveal" data-delay="0">
+                    <div class="timeline-dot" style="top: 1.5rem;"></div>
+                    <div class="glass-card p-6 hover-lift">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <h3 class="font-bold text-xl font-space">Full Stack Developer</h3>
+                            <span class="tag-pill">Current</span>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-3 text-sm mb-4">
+                            <span class="text-purple-400 font-medium">🏢 Tech Solutions Inc.</span>
+                            <span class="text-gray-600">|</span>
+                            <span class="text-gray-400">📅 Jan 2024 - Present</span>
+                            <span class="text-gray-600">|</span>
+                            <span class="text-gray-400">📍 Remote</span>
+                        </div>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li class="flex items-start gap-2">
+                                <span class="text-purple-400 mt-1">▸</span>
+                                Led development of microservices architecture serving 100K+ daily users
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-purple-400 mt-1">▸</span>
+                                Built RESTful APIs with Django REST Framework and React frontend
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-purple-400 mt-1">▸</span>
+                                Implemented CI/CD pipelines reducing deployment time by 60%
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-purple-400 mt-1">▸</span>
+                                Mentored junior developers and conducted code reviews
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="tag-pill">Python</span>
+                            <span class="tag-pill">Django</span>
+                            <span class="tag-pill">React</span>
+                            <span class="tag-pill">PostgreSQL</span>
+                            <span class="tag-pill">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="relative mb-12 scroll-reveal" data-delay="200">
+                    <div class="timeline-dot" style="top: 1.5rem;"></div>
+                    <div class="glass-card p-6 hover-lift">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <h3 class="font-bold text-xl font-space">Frontend Developer</h3>
+                            <span class="tag-pill" style="background: rgba(59,130,246,0.1); color: #3b82f6; border-color: rgba(59,130,246,0.2);">Previous</span>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-3 text-sm mb-4">
+                            <span class="text-blue-400 font-medium">🏢 Digital Agency Co.</span>
+                            <span class="text-gray-600">|</span>
+                            <span class="text-gray-400">📅 Jun 2023 - Dec 2023</span>
+                            <span class="text-gray-600">|</span>
+                            <span class="text-gray-400">📍 Hybrid</span>
+                        </div>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-400 mt-1">▸</span>
+                                Developed responsive web applications using React and Tailwind CSS
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-400 mt-1">▸</span>
+                                Collaborated with designers to implement pixel-perfect UI components
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-400 mt-1">▸</span>
+                                Optimized application performance achieving 95+ Lighthouse scores
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="tag-pill">React</span>
+                            <span class="tag-pill">TypeScript</span>
+                            <span class="tag-pill">Tailwind CSS</span>
+                            <span class="tag-pill">Next.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="relative mb-12 scroll-reveal" data-delay="400">
+                    <div class="timeline-dot" style="top: 1.5rem;"></div>
+                    <div class="glass-card p-6 hover-lift">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <h3 class="font-bold text-xl font-space">Web Developer Intern</h3>
+                            <span class="tag-pill" style="background: rgba(6,182,212,0.1); color: #06b6d4; border-color: rgba(6,182,212,0.2);">Internship</span>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-3 text-sm mb-4">
+                            <span class="text-cyan-400 font-medium">🏢 StartupHub</span>
+                            <span class="text-gray-600">|</span>
+                            <span class="text-gray-400">📅 Jan 2023 - May 2023</span>
+                            <span class="text-gray-600">|</span>
+                            <span class="text-gray-400">📍 On-site</span>
+                        </div>
+                        <ul class="space-y-2 text-gray-300 text-sm">
+                            <li class="flex items-start gap-2">
+                                <span class="text-cyan-400 mt-1">▸</span>
+                                Built and maintained Django-based web applications
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-cyan-400 mt-1">▸</span>
+                                Designed database schemas and implemented REST APIs
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-cyan-400 mt-1">▸</span>
+                                Gained experience with agile development methodologies
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="tag-pill">Python</span>
+                            <span class="tag-pill">Django</span>
+                            <span class="tag-pill">JavaScript</span>
+                            <span class="tag-pill">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold font-space scroll-reveal">
+                Services I <span class="gradient-text">Provide</span>
+            </h2>
+            <p class="text-gray-400 mt-2 scroll-reveal" data-delay="100">What I can do for you</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="glass-card p-8 text-center hover-lift scroll-reveal-scale" data-delay="0">
+                <div class="service-icon mx-auto mb-4">
+                    <span class="text-2xl">🌐</span>
+                </div>
+                <h3 class="font-bold text-lg font-space mb-2">Web Development</h3>
+                <p class="text-gray-400 text-sm">Full-stack web applications with modern frameworks, responsive design, and optimal performance.</p>
+            </div>
+            <div class="glass-card p-8 text-center hover-lift scroll-reveal-scale" data-delay="200">
+                <div class="service-icon mx-auto mb-4">
+                    <span class="text-2xl">🔌</span>
+                </div>
+                <h3 class="font-bold text-lg font-space mb-2">API Development</h3>
+                <p class="text-gray-400 text-sm">Scalable RESTful APIs and backend services with proper authentication and documentation.</p>
+            </div>
+            <div class="glass-card p-8 text-center hover-lift scroll-reveal-scale" data-delay="400">
+                <div class="service-icon mx-auto mb-4">
+                    <span class="text-2xl">🎨</span>
+                </div>
+                <h3 class="font-bold text-lg font-space mb-2">UI/UX Design</h3>
+                <p class="text-gray-400 text-sm">Beautiful, intuitive user interfaces with smooth animations and delightful user experiences.</p>
+            </div>
+            <div class="glass-card p-8 text-center hover-lift scroll-reveal-scale" data-delay="600">
+                <div class="service-icon mx-auto mb-4">
+                    <span class="text-2xl">📱</span>
+                </div>
+                <h3 class="font-bold text-lg font-space mb-2">Responsive Design</h3>
+                <p class="text-gray-400 text-sm">Mobile-first, pixel-perfect designs that look great on every device and screen size.</p>
+            </div>
+            <div class="glass-card p-8 text-center hover-lift scroll-reveal-scale" data-delay="800">
+                <div class="service-icon mx-auto mb-4">
+                    <span class="text-2xl">🗄️</span>
+                </div>
+                <h3 class="font-bold text-lg font-space mb-2">Database Design</h3>
+                <p class="text-gray-400 text-sm">Efficient database architecture, optimization, and management for scalable applications.</p>
+            </div>
+            <div class="glass-card p-8 text-center hover-lift scroll-reveal-scale" data-delay="1000">
+                <div class="service-icon mx-auto mb-4">
+                    <span class="text-2xl">🚀</span>
+                </div>
+                <h3 class="font-bold text-lg font-space mb-2">Deployment</h3>
+                <p class="text-gray-400 text-sm">Cloud deployment, CI/CD pipelines, and DevOps practices for reliable production systems.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
